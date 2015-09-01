@@ -43,6 +43,8 @@ pg.connect("postgres://kdemo_db_user@localhost/kdemo_db", function(err, client) 
         }
     });
     client.query("LISTEN table_update");
+	
+	//<span class="mini">在庫数量:</span> <span class="product_stock_<!--{$arrItem.productsClass.product_class_id|h}-->"><!--{$arrItem.productsClass.stock|h}--></span>
 });
 
 
